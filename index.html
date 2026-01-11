@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        :root {
+            --bg: #fafaf8;
+            --text: #1a1a1a;
+            --accent: #2a5a7a;
+            --border: #e0dfd8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 80px 24px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            margin-bottom: 64px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 32px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #666;
+            font-style: italic;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 28px;
+            margin-top: 48px;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        .intro {
+            font-size: 20px;
+            margin-bottom: 48px;
+            color: #444;
+        }
+
+        .projects {
+            margin-bottom: 48px;
+        }
+
+        .project {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+            animation: slideIn 0.6s ease-out;
+            animation-fill-mode: both;
+        }
+
+        .project:nth-child(1) { animation-delay: 0.1s; }
+        .project:nth-child(2) { animation-delay: 0.2s; }
+        .project:nth-child(3) { animation-delay: 0.3s; }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        .project h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 22px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .project-link {
+            color: var(--accent);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        .project-link:hover {
+            opacity: 0.7;
+            text-decoration: underline;
+        }
+
+        .resume-section {
+            margin-top: 48px;
+            padding: 32px;
+            background: linear-gradient(135deg, #f5f5f0 0%, #fafaf8 100%);
+            border: 1px solid var(--border);
+            border-radius: 2px;
+        }
+
+        .resume-link {
+            display: inline-block;
+            padding: 12px 32px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: all 0.2s;
+            font-family: 'Crimson Text', Georgia, serif;
+            font-size: 18px;
+        }
+
+        .resume-link:hover {
+            background: #1a4a6a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(42, 90, 122, 0.2);
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: #888;
+            font-size: 16px;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 48px 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .intro {
+                font-size: 18px;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Name</h1>
+            <p class="subtitle">Software Developer & Designer</p>
+        </header>
+
+        <section class="intro">
+            <p>Welcome to my portfolio. I'm currently working on exciting projects at the intersection of design and technology. This page serves as a placeholder while I build out my full portfolio site.</p>
+        </section>
+
+        <section class="projects">
+            <h2>Recent Projects</h2>
+            
+            <div class="project">
+                <h3>Project One</h3>
+                <p>A brief description of your first project. What problem did it solve? What technologies did you use? What was the outcome?</p>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+
+            <div class="project">
+                <h3>Project Two</h3>
+                <p>A brief description of your second project. Highlight the key challenges and your creative solutions.</p>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+
+            <div class="project">
+                <h3>Project Three</h3>
+                <p>A brief description of your third project. What made this project unique or interesting?</p>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2>Resume</h2>
+            <p style="margin-bottom: 20px;">Download my resume to learn more about my experience and skills.</p>
+            <a href="resume.pdf" class="resume-link" download>Download Resume (PDF)</a>
+        </section>
+
+        <footer>
+            <p>Connect with me:</p>
+            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+            <a href="https://github.com/yourusername">GitHub</a>
+        </footer>
+    </div>
+</body>
+</html>
